@@ -26,4 +26,4 @@ Welcome to my personal portfolio! This project showcases my skills, experience, 
 ---
 ### Author
 Aitor Pérez López
-📧 Contact: ()
+📧 Contact: 
