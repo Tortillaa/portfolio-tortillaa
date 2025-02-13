@@ -2,7 +2,7 @@
 
 ## Here is a preview:
 
-![Portfolio Preview](web-preview.png)
+![Portfolio Preview](img/web-preview.png)
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and certifications with a unique **Matrix-inspired** design. The webpage includes various interactive animations, a typing effect for the headings, and a futuristic green-on-black aesthetic.
 
