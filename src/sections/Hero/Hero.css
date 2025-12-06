@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  flex-direction: column; /* o row si quieres texto al lado de la tarjeta */
+  align-items: center; /* centra horizontalmente */
+  justify-content: flex-start; /* empieza desde arriba */
+  padding-top: 120px; /* espacio para navbar si lo tienes */
+  gap: 40px; /* separación entre texto y ProfileCard */
+  min-height: 100vh;
+}
+
+.hero-profile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 4rem; /* tamaño grande */
+  font-weight: bold;
+  line-height: 1.2;
+}
