@@ -12,7 +12,7 @@
   --grain: none;
   --icon: none;
   --behind-gradient: none;
-  --behind-glow-color: rgba(125, 190, 255, 0.67);
+  --behind-glow-color: rgba(40, 80, 150, 0.5); /* Ajustado */
   --behind-glow-size: 25%;
   --inner-gradient: none;
   --sunpillar-1: hsl(2, 100%, 73%);
@@ -70,7 +70,10 @@
     calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
   transition: transform 1s ease;
   transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  background: rgba(0, 0, 0, 0.9);
+
+  /* FONDO PRINCIPAL AJUSTADO */
+  background: #0e2443;
+
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -101,11 +104,13 @@
   inset: 0;
   position: absolute;
   background-image: var(--inner-gradient);
-  background-color: rgba(0, 0, 0, 0.9);
+  
+  /* FONDO INTERIOR AJUSTADO */
+  background-color: #0e2443;
+
   transform: none;
 }
 
-/* --- Brillo reducido --- */
 .pc-shine {
   mask-image: var(--icon);
   mask-mode: luminance;
@@ -142,12 +147,12 @@
     ),
     repeating-linear-gradient(
       var(--angle),
-      #0e152e 0%,
+      #0e2443 0%,
       hsl(180, 10%, 60%) 3.8%,
       hsl(180, 29%, 66%) 4.5%,
       hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
-      #0e152e 12%
+      #0e2443 10%,
+      #0e2443 12%
     ),
     radial-gradient(
       farthest-corner circle at var(--pointer-x) var(--pointer-y),
@@ -220,7 +225,7 @@
 .pc-shine::after {
   background-position:
     0 var(--background-y),
-    calc(var(--background-x) * 0.4) calc(var(--background-y) * 0.5),
+    calc(var(--pointer-x) * 0.4) calc(var(--pointer-y) * 0.5),
     center;
   background-size:
     200% 300%,
@@ -235,8 +240,8 @@
   overflow: hidden;
   background-image: radial-gradient(
     farthest-corner circle at var(--pointer-x) var(--pointer-y),
-    hsl(248, 25%, 85%) 12%,
-    hsla(207, 40%, 50%, 0.3) 90%
+    hsla(210, 40%, 85%, 0.9) 12%,
+    hsla(210, 40%, 35%, 0.25) 90%
   );
   mix-blend-mode: overlay;
   filter: brightness(0.5) contrast(1.1);
