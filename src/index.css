@@ -1,19 +1,22 @@
+/* ------------------------------------ */
+/* Tailwind Base                        */
+/* ------------------------------------ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ------------------------------ */
-/* Reset básico                  */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Reset básico                          */
+/* ------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ------------------------------ */
-/* Tipografía global             */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Tipografía global                     */
+/* ------------------------------------ */
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -26,9 +29,9 @@ body {
   line-height: 1.6;
 }
 
-/* ------------------------------ */
-/* Enlaces                       */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Enlaces                               */
+/* ------------------------------------ */
 a {
   color: inherit;
   text-decoration: none;
@@ -38,33 +41,65 @@ a:hover {
   opacity: 0.8;
 }
 
-/* ------------------------------ */
-/* Imágenes                      */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Imágenes                              */
+/* ------------------------------------ */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* ------------------------------ */
-/* Listas                        */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Listas                                */
+/* ------------------------------------ */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* ------------------------------ */
-/* Contenedores base             */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Contenedor principal                  */
+/* ------------------------------------ */
 .container {
   width: min(1200px, 90%);
   margin: auto;
 }
 
-/* ------------------------------ */
-/* Scrollbar (opcional estilizado)*/
-/* ------------------------------ */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  /* Fondo similar a tu página */
+  background: linear-gradient(135deg, rgba(14,36,67,0.8), rgba(0,0,0,0.8));
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  
+  /* Opcional: efecto sutil de luz */
+  position: relative;
+  overflow: hidden;
+}
+
+.page-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(71,196,255,0.2), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* ------------------------------------ */
+/* Scrollbar personalizado (opcional)    */
+/* ------------------------------------ */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -82,9 +117,42 @@ ul {
   background: #666;
 }
 
-/* ------------------------------ */
-/* main */
-/* ------------------------------ */
+/* ------------------------------------ */
+/* Layout principal                       */
+/* ------------------------------------ */
 main {
   padding-top: 60px; /* altura navbar + margen extra */
+}
+
+/* ------------------------------------ */
+/* Fondo ColorBends con blur             */
+/* ------------------------------------ */
+.cb-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cb-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ------------------------------------ */
+/* Asegurar contenido por encima del fondo */
+/* ------------------------------------ */
+main,
+.custom-nav,
+footer {
+  position: relative;
+  z-index: 10;
 }

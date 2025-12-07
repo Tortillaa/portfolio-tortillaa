@@ -9,19 +9,6 @@ import avatar from '../../assets/images/avatar.png'
 export default function Hero() {
   return (
     <section className="hero">
-      {/* Contenido de Hero: títulos, subtítulos, etc. */}
-      <div className="hero-text">
-        <h1 className="hero-title">
-          <TextType 
-          text={["Welcome to my portfolio...", "I am glad you came here!!!", "Enjoy your visit :D"]}
-          typingSpeed={75}
-          pauseDuration={1500}
-          showCursor={true}
-          cursorCharacter="|"
-        />
-        </h1>
-      </div>
-
       {/* ProfileCard */}
       <div className="hero-profile">
         <ProfileCard
@@ -36,6 +23,19 @@ export default function Hero() {
           enableMobileTilt={false}
           onContactClick={() => console.log('Contact clicked')}
         />
+      </div>
+
+      {/* Contenido de Hero: títulos, subtítulos, etc. */}
+      <div className="hero-text">
+        <h1 className="hero-title">
+          <TextType 
+          text={["Welcome to my portfolio...", "I am glad you came here!!!", "Enjoy your visit :D"]}
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="|"
+        />
+        </h1>
       </div>
     </section>
   );
