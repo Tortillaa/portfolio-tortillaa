@@ -8,10 +8,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "install:extras": "npm install three gsap react-router-dom && npx shadcn@latest add @react-bits/TextType-JS-CSS && npx shadcn@latest add @react-bits/LogoLoop-JS-CSS"
+    "install:extras": "npm i three gsap react-router-dom && npx shadcn@latest add @react-bits/TextType-JS-CSS @react-bits/LogoLoop-JS-CSS"
   },
   "dependencies": {
-    "gsap": "^3.13.0",
+    "gsap": "^3.14.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
