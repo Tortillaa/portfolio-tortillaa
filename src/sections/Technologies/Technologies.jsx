@@ -25,17 +25,15 @@ export default function Skills() {
         <h2 className="text-4xl font-bold mb-6">Technologies:</h2>
         <br />
         <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
             <LogoLoop
               logos={techLogos}
               speed={120}
               direction="left"
-              logoHeight={48}
+              logoHeight={58}
               gap={100}
               hoverSpeed={0}
               scaleOnHover
-              fadeOut
-              fadeOutColor="#ffffff"
               ariaLabel="Technology partners"
             />
           </div>
