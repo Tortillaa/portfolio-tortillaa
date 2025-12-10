@@ -82,6 +82,14 @@ ul {
   z-index: 0;
 }
 
+.separator {
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.2;       
+  margin: 24px 0;
+  width: 100%;
+}
+
 
 /* ------------------------------------ */
 /* Scrollbar personalizado (opcional)    */
