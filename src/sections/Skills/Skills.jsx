@@ -22,7 +22,8 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 max-w-5xl mx-auto px-6 text-white">
       <div className='page-container'>
-        <h2 className="text-4xl font-bold mb-6">Technologies:</h2>
+        <h2 className="text-4xl font-bold mb-6">Skills:</h2>
+        <p>I'm a Full Stack Web and Mobile Developer, building functional and user-friendly applications. I work with the next technologies...</p>
         <br />
         <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
