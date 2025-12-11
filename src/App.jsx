@@ -3,7 +3,7 @@ import PillNav from "./components/PillNav/PillNav";
 
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
-import Technologies from "./sections/Technologies/Technologies";
+import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
 import Contact from "./sections/Contact/Contact";
 
@@ -51,7 +51,7 @@ function App() {
       <main className="relative z-10">
         <Hero />
         <About />
-        <Technologies />
+        <Skills />
         <Projects />
         <Contact />
       </main>
