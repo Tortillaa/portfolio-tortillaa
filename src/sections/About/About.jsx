@@ -1,3 +1,5 @@
+import logoDark from '../../assets/images/logo-dark-component.png';
+
 export default function About() {
   return (
     <section id="about" className="py-24 max-w-4xl mx-auto px-6 text-white bg-gray-900 rounded-xl shadow-lg">
@@ -17,7 +19,7 @@ export default function About() {
         {/* Imagen */}
         <div className="flex-1 flex justify-center md:justify-end">
           <img
-            src="/images/logo-dark.png"
+            src={logoDark}
             alt="Logo"
             className="w-64 h-64 object-contain rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
           />
