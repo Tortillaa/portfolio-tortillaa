@@ -8,8 +8,10 @@
 
 @media (max-width: 768px) {
   .pill-nav-container {
-    width: 100%;
-    left: 0;
+    width: auto;
+    left: auto;
+    right: 1rem;
+    transform: none;
   }
 }
 

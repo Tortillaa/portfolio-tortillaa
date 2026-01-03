@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((p) => (
             <div key={p.title} className="bg-white/10 p-6 rounded-xl backdrop-blur flex flex-col gap-3">
-              <div class="separator"></div>
+              <div className="separator"></div>
               <h3 className="text-2xl font-bold">{p.title}</h3>
               <div className="mt-4 text-purple-400">
                 <SiReact size={80} /> {/* tamaño en píxeles */}
@@ -22,7 +22,7 @@ export default function Projects() {
               <a href={p.url} target="_blank" className="text-purple-400 mt-4 inline-block">
                 Link to repo →
               </a>
-              <div class="separator"></div>
+              <div className="separator"></div>
             </div>
           ))}
           <br />
