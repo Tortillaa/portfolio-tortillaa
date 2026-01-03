@@ -33,6 +33,7 @@ function App() {
         logo={logo}
         logoAlt="Portfolio logo"
         items={[
+          { label: 'Home', href: '#home' },
           { label: 'About', href: '#about' },
           { label: 'Skills', href: '#skills' },
           { label: 'Projects', href: '#projects' },
