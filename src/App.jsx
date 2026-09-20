@@ -1,5 +1,6 @@
 import ColorBends from "./components/ColorBends/ColorBends";
 import Grid from "./components/Grid/Grid";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <main className="app-content">
         <Grid />
       </main>
+      <Footer />
     </div>
   );
 }
