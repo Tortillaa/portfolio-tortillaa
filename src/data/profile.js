@@ -30,9 +30,14 @@ export const profile = {
   },
   education: [
     {
+      title: "Máster FP en Inteligencia Artificial y Big Data",
+      place: "Monlau Formación Profesional",
+      extra: "sept 2026 – actualidad (en curso)",
+    },
+    {
       title: "Grado superior: Desarrollo de Aplicaciones Multiplataforma",
       place: "Escola del Treball",
-      extra: "en curso",
+      extra: "sept 2024 – jun 2026",
     },
     {
       title: "Grado medio: Sistemas Microinformáticos y Redes",
@@ -81,7 +86,6 @@ export const profile = {
   ],
   contact: {
     cta: "¿Colaboramos?",
-    email: "aitor.house@hotmail.com",
     links: [
       {
         label: "LinkedIn",
