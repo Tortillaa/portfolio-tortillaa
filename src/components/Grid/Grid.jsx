@@ -31,6 +31,10 @@ function GridCell({
 }
 
 export default function Grid() {
+  const featuredContact = profile.contact.links.find(
+    (link) => link.label === "LinkedIn",
+  );
+
   return (
     <section className="portfolio-grid" aria-label="Portfolio">
       <GridCell col={8} colMd={6} variant="elevated" className="grid-cell-intro">
@@ -43,11 +47,18 @@ export default function Grid() {
 
       <GridCell title="Contacto" col={4} colMd={6} variant="elevated" className="grid-cell-contact">
         <p className="contact-cta">{profile.contact.cta}</p>
-        <a className="contact-email" href={`mailto:${profile.contact.email}`}>
-          {profile.contact.email}
+        <a
+          className="contact-email"
+          href={featuredContact.href}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {featuredContact.label}
         </a>
         <ul className="contact-pills">
-          {profile.contact.links.map((link) => (
+          {profile.contact.links
+            .filter((link) => link.href !== featuredContact.href)
+            .map((link) => (
             <li key={link.href}>
               <a className="pill" href={link.href} target="_blank" rel="noreferrer">
                 {link.label}
