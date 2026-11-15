@@ -80,6 +80,12 @@ export const profile = {
       href: "https://tortillaa.github.io/portfolio-tortillaa/",
     },
     {
+      title: "prz-factory",
+      description:
+        "Fábrica de software para agentes de código, con tablero kanban local, agentes de un solo rol (spec, build, review, merge) y merge gate. Node.js (≥22), ESM, 0 dependencias, MIT. Corre en Orca, con Claude Code y Grok.",
+      href: "https://github.com/Tortillaa/prz-factory",
+    },
+    {
       title: "Coming soon",
       description: "Nuevo proyecto en camino.",
     },
